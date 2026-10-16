@@ -1,0 +1,18 @@
+# Dependências e build
+node_modules
+dist
+public/vendor
+*.tsbuildinfo
+*.log
+
+# Vercel
+.vercel
+
+# Variáveis de ambiente (nunca suba credenciais!)
+.env
+.env.*
+!.env.example
+
+# Supabase CLI local
+supabase/.temp
+supabase/.branches

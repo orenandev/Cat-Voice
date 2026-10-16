@@ -1,0 +1,31 @@
+{
+  "name": "cat-voice",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/copy-vendor.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/copy-vendor.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "@supabase/supabase-js": "^2.117.3",
+    "libarchive.js": "^2.0.2",
+    "lucide-react": "^1.56.0",
+    "ogv": "^1.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}
